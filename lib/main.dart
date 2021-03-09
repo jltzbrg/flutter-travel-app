@@ -36,6 +36,18 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 37),
+            Text.rich(
+              TextSpan(
+                  text: 'Welcome,',
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                  children: [
+                    TextSpan(
+                        text: '   Julio',
+                        style: TextStyle(fontWeight: FontWeight.normal))
+                  ]),
+              style: TextStyle(fontSize: 50),
+            ),
+            SizedBox(height: 30)
           ],
         ),
       ),
