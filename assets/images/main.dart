@@ -64,7 +64,24 @@ class HomePage extends StatelessWidget {
               'Saved Places',
               style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
             ),
-            SizedBox(height: 10)
+            SizedBox(height: 10),
+            SizedBox(
+              height: 300,
+              child: GridView.count(
+                //FIXME: Bilder können nicht dargesttellt werden im Grid
+                padding: EdgeInsets.zero,
+                crossAxisCount: 2,
+                crossAxisSpacing: 10,
+                mainAxisSpacing: 10,
+                physics: NeverScrollableScrollPhysics(),
+                childAspectRatio: 1.491,
+                children: [
+                  for (var country in countries)
+                    Image.asset('assets/images/$country.png')
+                ],
+              ),
+            ),
+            //TODO: Bilder müssen erstellt werden
           ],
         ),
       ),
@@ -72,4 +89,4 @@ class HomePage extends StatelessWidget {
   }
 }
 
-final countries = ['Japan', 'Australia', 'Brazil', 'Cuba'];
+final countries = ['japan', 'australia', 'brazil', 'cuba'];
