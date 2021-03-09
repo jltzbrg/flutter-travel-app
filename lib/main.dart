@@ -47,7 +47,19 @@ class HomePage extends StatelessWidget {
                   ]),
               style: TextStyle(fontSize: 50),
             ),
-            SizedBox(height: 30)
+            SizedBox(height: 30),
+            TextField(
+              decoration: InputDecoration(
+                  prefixIcon: Icon(
+                    Icons.search,
+                    size: 18,
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
+                  hintText: 'Search'),
+            ),
+            SizedBox(height: 80),
           ],
         ),
       ),
