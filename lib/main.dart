@@ -60,6 +60,11 @@ class HomePage extends StatelessWidget {
                   hintText: 'Search'),
             ),
             SizedBox(height: 80),
+            Text(
+              'Saved Places',
+              style: TextStyle(fontWeight: FontWeight.w600, fontSize: 20),
+            ),
+            SizedBox(height: 10)
           ],
         ),
       ),
