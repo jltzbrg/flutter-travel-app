@@ -26,7 +26,17 @@ class HomePage extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 30.0),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [],
+          children: [
+            SizedBox(height: 60),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                IconButton(icon: Icon(Icons.notifications), onPressed: () {}),
+                IconButton(icon: Icon(Icons.extension), onPressed: () {})
+              ],
+            ),
+            SizedBox(height: 37),
+          ],
         ),
       ),
     );
